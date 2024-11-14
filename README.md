@@ -1,74 +1,41 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# Online Quiz Task
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a quiz game built using React, utilizing the **Open Trivia DB API** to fetch quiz questions. The user is presented with a series of questions, where they must select an answer for each one. Upon completing the quiz, the user can submit their answers to see their final score and review any incorrect answers.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+1. **Fetch Questions from API**: Use the [Open Trivia DB API](https://opentdb.com/api.php?amount=10&category=23&difficulty=easy) to retrieve a list of quiz questions.
+2. **User Answer Selection**: For each question, the user selects one answer from the available options.
+3. **Score Calculation**: After submitting the quiz, the user's score is displayed, along with a review of any incorrect answers.
+4. **Component Structure**: The application is structured with React components, and the state is managed using the `useContext` hook.
 
-### `npm start`
+## Components
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **QuizComponent**: Displays the list of questions and answer choices. Users can select answers and navigate through the questions.
+- **ScoreComponent**: Displays the final score and a breakdown of correct and incorrect answers after the quiz is submitted.
+- **QuestionComponent**: Represents individual questions and their possible answers.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Flow
 
-### `npm test`
+1. The user is presented with a series of 10 questions from the API.
+2. For each question, the user selects an answer.
+3. After answering all questions, the user can submit the quiz.
+4. The final score is shown, and the user can see which questions were answered incorrectly.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## API Used
 
-### `npm run build`
+The API used to fetch the questions is:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+https://opentdb.com/api.php?amount=10&category=23&difficulty=easy
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Preview of the Project 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### First Question With Next Button
+![First Question](public/assets/image1.png)
 
-### `npm run eject`
+### Qustion With Next and Previous Button
+![Qustion With Next and Previous Button](public/assets/image2.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# Online-Quiz-React
->>>>>>> dd80a62e798f5ca16a43f210503d214898258b9d
+### Result Page
+![Result Page](public/assets/image.png)
