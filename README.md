@@ -28,7 +28,7 @@ The API used to fetch the questions is:
 
 ```bash
 https://opentdb.com/api.php?amount=10&category=23&difficulty=easy
-
+```
 ## Preview of the Project 
 
 ### First Question With Next Button
